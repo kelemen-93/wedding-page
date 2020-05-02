@@ -73,9 +73,9 @@ table {
 
 .head-tag {
   background-color: rgba(0,0,0,0.7);
-  margin: 10px auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin: 0.625rem auto;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
 .tagline, .byline {
@@ -85,7 +85,7 @@ table {
 .tagline {
   font-size: 1.5625rem;
   letter-spacing: 0.1875rem;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 }
 
 .tagline::after {
@@ -101,7 +101,7 @@ table {
   color: #d2ba87;
   font-family: "Great Vibes", cursive;
   font-size: 3.125rem;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 }
 
 .byline {
@@ -116,7 +116,7 @@ table {
   width: 1.25rem;
   background-color: white;
   vertical-align: middle;
-  margin: 0 8px;
+  margin: 0 0.5rem;
 }
 
 .byline::after {
@@ -126,5 +126,56 @@ table {
   width: 1.25rem;
   background-color: white;
   vertical-align: middle;
-  margin: 0 8px;
+  margin: 0 0.5rem;
+}
+
+/* === Location Styles and Positioning === */
+
+.location {
+  background-image: url(assets/wedding-landing-background.png);
+  background-repeat: repeat;
+  width: 100%;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.location h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.125rem;
+  color: #444349;
+  padding: 1rem 0;
+}
+
+.location h2 {
+  font-size: 1.5625rem;
+  font-family: "Libre Baskerville", serif;
+  color: #444349;
+  opacity: 85%;
+  padding: 0.625rem 0;
+  font-weight: 600;
+}
+
+.location img {
+  width: 7.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.location p {
+  font-size: 1.125rem;
+  font-family: Muli, sans-serif;
+  color: #444349;
+  opacity: 90%;
+  padding-top: 0.625rem;
+}
+
+.package1::after {
+  content: "";
+  display: block;
+  height: 0.1875rem;
+  width: 7.5rem;
+  background-color: #444349;
+  opacity: 90%;
+  margin: 1.5rem auto;
 }
