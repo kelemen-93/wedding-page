@@ -53,6 +53,10 @@ table {
   box-sizing: border-box;
 }
 
+body {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+}
+
 /* === Header Styles and Positioning === */
 
 .cover {
@@ -179,3 +183,46 @@ table {
   opacity: 90%;
   margin: 1.5rem auto;
 }
+
+/* === Programs Styles and Positioning === */
+
+.program {
+  background-color: hsla(100,0%,0%,0.6);
+  width: 100%;
+  color: #d2ba87;
+  margin: 1.5rem auto;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.program h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.125rem;
+  padding: 30px;
+}
+
+.program-wrapper {
+  display: inline-block;
+  width: 450px;
+  text-align:left;
+  font-family: "Muli", sans-serif;
+  font-size: 18px;
+}
+
+.program-wrapper p {
+  font-style: italic;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.program-wrapper ul {
+  letter-spacing: 2px;
+}
+
+.program-wrapper li {
+  padding-top: 5px;
+  padding-bottom: 8px;
+}
+
+
+
