@@ -57,7 +57,19 @@ body {
   background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
 }
 
-/* === Header Styles and Positioning === */
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition-property: color;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+}
+
+/* === "Header" Styles and Positioning === */
 
 .cover {
   background-image: url(assets/wedding-landing-cover.jpg);
@@ -133,7 +145,7 @@ body {
   margin: 0 0.5rem;
 }
 
-/* === Location Styles and Positioning === */
+/* === "Location" Styles and Positioning === */
 
 .location {
   background-image: url(assets/wedding-landing-background.png);
@@ -184,7 +196,7 @@ body {
   margin: 1.5rem auto;
 }
 
-/* === Programs Styles and Positioning === */
+/* === "Programs" Styles and Positioning === */
 
 .program {
   background-color: hsla(100,0%,0%,0.6);
@@ -224,5 +236,80 @@ body {
   padding-bottom: 8px;
 }
 
+/* === "Gifts" Styles and Positioning === */
 
+.gifts {
+  width: 100vw;
+  text-align: center;
+  color: #444349;
+  padding-bottom: 1rem;
+  margin: 1.5rem auto;
+}
 
+.gifts h1 {
+   font-family: "Great Vibes", cursive;
+  font-size: 3.125rem;
+  padding: 1rem 0;
+}
+
+.gifts img {
+  width: 7.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.gifts p {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 18px;
+  padding-top: 0.5rem
+}
+
+/* === "Questions & answers" Styles and Positioning === */
+
+.q-a {
+  background-color: hsla(100,0%,0%,0.6);
+  color: #d2ba87;
+  width: 100%;
+  margin: 1.5rem auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.q-a h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.125rem;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.q-a h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 25px;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.q-a p {
+  font-family: Muli, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.q-a .question {
+  font-weight: 600;
+}
+
+.q-a .answer {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.package2::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 250px;
+  background-color: #d2ba87;
+  margin: 0.5rem auto;
+}
