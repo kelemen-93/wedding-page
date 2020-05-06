@@ -57,6 +57,10 @@ body {
   background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
 }
 
+.location, .program, .gifts, .q-a, .contact {
+  width: 95%;
+}
+
 a {
   text-decoration: none;
   color: #bd806e;
@@ -76,7 +80,7 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   text-align: center;
   display: table;
@@ -145,12 +149,34 @@ a:hover {
   margin: 0 0.5rem;
 }
 
+/* === Header Media Queries === */
+
+@media screen and (min-width: 768px) {
+  
+  .head-tag {
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%;
+  }
+  
+  .headline {
+    font-size: 6.875rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  
+  .tagline {
+    text-transform: uppercase;
+    font-size: 1.375rem;
+  }
+}
+
 /* === "Location" Styles and Positioning === */
 
 .location {
   background-image: url(assets/wedding-landing-background.png);
   background-repeat: repeat;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -196,6 +222,29 @@ a:hover {
   margin: 1.5rem auto;
 }
 
+/* === Location Media Queries === */ 
+
+@media screen and (min-width: 768px) {
+  
+  .package1 {
+    float: left;
+    width: 31%;
+    display: inline-block;
+    padding: 1.5rem;
+    margin: 0.5rem;
+  }
+  
+  .package1::after {
+    display: none;
+  }
+  
+  .location::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
 /* === "Programs" Styles and Positioning === */
 
 .program {
@@ -215,7 +264,6 @@ a:hover {
 
 .program-wrapper {
   display: inline-block;
-  width: 28.125rem;
   text-align: left;
   font-family: "Muli", sans-serif;
   font-size: 1.125rem;
@@ -269,11 +317,9 @@ a:hover {
 .q-a {
   background-color: hsla(100,0%,0%,0.6);
   color: #d2ba87;
-  width: 100%;
+  width: 100vw;
   margin: 1.5rem auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .q-a h1 {
@@ -285,7 +331,7 @@ a:hover {
 
 .q-a h2 {
   font-family: "Libre Baskerville", serif;
-  font-size: 25px;
+  font-size: 1.5625rem;
   text-align: center;
   padding: 1.5rem 0;
 }
@@ -314,11 +360,39 @@ a:hover {
   margin: 0.5rem auto;
 }
 
+/* === Q-A Media Queries === */
+
+@media screen and (min-width: 768px) {
+  
+  .package2 {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    margin: 1.5rem 0.7rem;;
+    padding: 0.5rem;
+    vertical-align: top;
+  }
+  
+  .package2::after {
+    display: none;
+  }
+  
+  .q-a h2 {
+    text-align: left;
+  }
+  
+  .q-a::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
 /* === Contact Styles and Positioning === */
 
 .contact {
   color: #444349;
-  width 100wv;
+  width: 100vw;
   text-align: center;
   padding: 1rem
 }
@@ -331,7 +405,7 @@ a:hover {
 
 .contact p {
   font-family: "Libre Baskerville", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   padding-top: 0.5rem;
   padding-bottom: 1.5rem; 
   line-height: 1.5;
@@ -353,4 +427,13 @@ footer {
 footer .wrapper {
   display: table-cell;
   vertical-align: middle;
+}
+
+/* === Footer Media Queries === */
+
+@media screen and (min-width: 768px) {
+  
+  footer {
+    height: 7rem;
+  }
 }
